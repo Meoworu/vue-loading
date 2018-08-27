@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color:transparent;
+}
+
+html,body {
+	height: 100%;
+	font-size: 16px;
+}
+
+ul,ol {
+	list-style: none;
+}
+
+img{
+	vertical-align: middle;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+/*清除浮动*/
+.cl:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/*以...显示多余内容*/
+.ell {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/*覆盖标题和底部菜单*/
+.cov {
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 101;
+}
+

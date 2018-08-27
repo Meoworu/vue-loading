@@ -217,6 +217,7 @@ export default {
                     if(flag){
                         this.orders = result.orderDetail
                         this.$refs.loadmore.onTopLoaded();
+                        this.noMore = false;
                     }else{
                         this.orders = this.orders.concat(result.orderDetail);
                     }
